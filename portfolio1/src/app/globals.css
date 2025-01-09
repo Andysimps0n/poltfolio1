@@ -1,0 +1,175 @@
+body { 
+  margin: 0;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-family: var(--font-geist-sans);
+  width: 100vw;
+  height: 100vh;
+  user-select: none;
+}
+
+:root {
+  --font-geist-sans: sans-serif; /* fallback font */
+  --font-geist-mono: monospace; /* fallback font */
+}
+
+body::-webkit-scrollbar { 
+  display: none;
+}
+
+.header-container {
+  width: 100vw;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(5px);
+}
+
+.border {
+  border: 2px solid red;
+}
+
+.text-margin {
+  margin: 1rem 0;
+}
+.text-title {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 6.5rem;
+  
+}
+
+.text-normal {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.text1-wrapper {
+  width: 95%;
+  height: 30%;
+  margin: 30vh auto 0 auto;
+}
+
+.color-grey {
+  color: rgb(160, 160, 160);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-element {
+  height: fit-content;
+  width: 10vw;
+  font-size: 1.5rem;
+}
+
+.header-wrapper {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  
+  display: flex;
+  align-items: center;
+}
+
+.first-picture {
+  background-image: url('/5.jpg');
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  background-size: contain; /* Ensures the entire image is visible */
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Adjust this ratio based on your image */
+  height: auto; /* Automatically adjust the height based on the image's aspect ratio */
+}
+
+.project-explain-container {
+  display: flex;
+  margin-top: 10rem;
+  flex-direction: row;
+}
+
+.gallery {
+  width: 30%;
+  height: 100%;
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin: 2em;
+}
+
+.project-explain-wrapper {
+  width: 80%;
+  height: 100%;
+}
+
+.project-explain-header {
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: rgb(160, 160, 160);
+}
+
+.project-explain {
+  font-size: 2rem;
+  width: 90%;
+  line-height: 1.5em;
+  font-weight: 200;
+}
+.read-more {
+  color: rgb(160, 160, 160);
+  user-select: none;
+  text-decoration: underline;
+  transition: all 0.1s;
+}
+
+.read-more:hover {
+  color: white;
+}
+
+
+.feature-container {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.feature-element-text  {
+  color: white;
+}
+.feature-element-wrapper {
+  width: 23%;
+  height: 5rem;
+  margin-right: 1rem;
+  color: rgb(160, 160, 160);
+  font-weight: 250;
+  font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  .header-element {
+    height: fit-content;
+    width: 50vw;
+    /* font-size: 3rem; */
+  }
+
+  .text1-wrapper {
+    margin: 20vh auto 0 auto;
+  }
+
+  .text-title {
+    font-size: 4rem;
+    line-height: 4.2rem;
+  }
+
+  .gallery, .project-explain-wrapper {
+    width: 100%;
+  }
+
+  .project-explain-container {
+    flex-direction: column;
+  }
+}
