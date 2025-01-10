@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
   height: 10vh;
   position: sticky;
   top: 0;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
 }
 
 .border {
@@ -47,7 +47,7 @@ body::-webkit-scrollbar {
 .text1-wrapper {
   width: 95%;
   height: 30%;
-  margin: 30vh auto 0 auto;
+  margin: 18vh auto 0 auto;
 }
 
 .color-grey {
@@ -63,6 +63,7 @@ body::-webkit-scrollbar {
 .header-element {
   height: fit-content;
   width: 10vw;
+  font-weight: 500;
   font-size: 1.5rem;
 }
 
@@ -76,7 +77,8 @@ body::-webkit-scrollbar {
 }
 
 .first-picture {
-  background-image: url('/5.jpg');
+  background-image: url('/2.jpg');
+  margin: 5em 0;
   background-position: center; /* Centers the image */
   background-repeat: no-repeat;
   background-size: contain; /* Ensures the entire image is visible */
@@ -87,7 +89,7 @@ body::-webkit-scrollbar {
 
 .project-explain-container {
   display: flex;
-  margin-top: 10rem;
+  margin: 7rem;
   flex-direction: row;
 }
 
@@ -119,6 +121,7 @@ body::-webkit-scrollbar {
 .read-more {
   color: rgb(160, 160, 160);
   user-select: none;
+  width: fit-content;
   text-decoration: underline;
   transition: all 0.1s;
 }
@@ -145,6 +148,90 @@ body::-webkit-scrollbar {
   font-weight: 250;
   font-size: 1.2rem;
 }
+
+
+.second-photo-container {
+  margin: 7rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#photo2, #photo3, #photo4, #photo5 {
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  background-size: contain; /* Ensures the entire image is visible */
+  aspect-ratio: 16 / 9;
+  border-radius: 0.41em;
+}
+
+#photo2 { 
+  background-image: url('/3.jpg');
+    width: 47%;
+
+}
+#photo3 { 
+  background-image: url('/4.jpg');
+    width: 47%;
+
+}
+
+
+.text-section-1 {
+  width: 100%;
+  margin: 5rem 0;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.text-section-title {
+  width: 40%;
+  box-sizing: border-box;
+  padding: 0 3.2rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.text-section-text {
+  margin: 0 2em;
+  width: 50%;
+  font-weight: 300;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+#photo4 {
+  background-image: url('/1.jpg');
+  width: 90%;
+  border-radius: 0.5em;
+}
+#photo5 {
+  background-image: url('/5.jpg');
+  width: 90%;
+  border-radius: 0.5em;
+}
+
+.left-lean-container {
+  width: 95%;
+  margin: 2em auto;
+}
+
+.right-lean-container {
+  width: 95%;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.divider {
+  width: 95%;
+  height: 0.2em;
+  background-color: rgb(112, 112, 112);
+  margin: 5em auto;
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 10px;
@@ -157,7 +244,7 @@ body::-webkit-scrollbar {
   }
 
   .text1-wrapper {
-    margin: 20vh auto 0 auto;
+    margin: 25vh auto 0 auto;
   }
 
   .text-title {
@@ -169,7 +256,12 @@ body::-webkit-scrollbar {
     width: 100%;
   }
 
+  .project-explain-wrapper {
+    margin-left: 3em;
+  }
+
   .project-explain-container {
     flex-direction: column;
   }
 }
+

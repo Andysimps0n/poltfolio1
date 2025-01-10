@@ -1,5 +1,6 @@
 'use client'
 import React, {useState} from 'react';
+import ProjectExplain from './components/ProjectExplain';
 import Header from './components/Header'
 
 export default function Home() {
@@ -20,37 +21,37 @@ export default function Home() {
 
       <div className="first-picture"></div>
 
-      <div className="project-explain-container">
-        <div className="gallery">Gallery</div>
-        <div className="project-explain-wrapper">
-          <div className="project-explain-header">Projects - Norwegian National Opera and Ballet</div>
-          <div className="project-explain">The opera house is part of Oslo's revitalization strategy to redevelop the city's historically industrial waterfront into an active public space and was the first building to be completed in the Bjørvika area. It is built on piles in the Oslo fjord, abutting reclaimed land that extends Oslo's harbor, giving more of the city's waterfront space back to the public.</div>
-          {isReadMore ? <div className="project-explain">be completed in the Bjørvika area. It is built on piles in the Oslo fjord, abutting reclaimed land that extends Oslo's harbor, giving more of the city's waterfront space back to the public.</div>: null}
-          <div onClick={()=>{setIsReadMore(!isReadMore)}} className="read-more">{isReadMore ? "Close" : "Read more"}</div>
-          <div className="feature-container">
-            <div className="feature-element-wrapper">
-              <div>Typologies</div>
-              <div className="feature-element-text">Performance Space, Public Space, Art</div>
-            </div>
-            <div className="feature-element-wrapper">
-              <div>Status</div>
-              <div className="feature-element-text">Completed</div>
-            </div>
-            <div className="feature-element-wrapper">
-              <div>Location</div>
-              <div className="feature-element-text">Oslo, Norway</div>
-            </div>
-            <div className="feature-element-wrapper">
-              <div>Client</div>
-              <div className="feature-element-text">Statsbygg, The Governmental Building Agency</div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-        <div className="second-photo-container border"></div>
+        <ProjectExplain></ProjectExplain>
+
+        <div className="second-photo-container ">
+          <div id="photo2"></div>
+          <div id="photo3"></div>
+        </div>
+
+
+        <div className="text-section-1">
+          <div className="text-section-title">textext</div>
+          <div className="text-section-text">An ancient custom now protected by Norwegian law, alle­mannsretten (Norwegian for the right to roam) ensures one's freedom to move unrestricted throughout the countryside. Applying this idea to the interior in addition to the exterior of a building­ that is, to the landscape and also to the architecture - removes the oppositional nature from these terms. As they become synonymous, interior and exterior spaces become continuous. It was in this spirit that our proposal for the Norwegian National Opera and Ballet was conceived.</div>
+        </div>
+
+
+        <div className="left-lean-container">
+          <div id="photo5"></div>
+        </div>
+        <div className="right-lean-container">
+          <div id="photo4"></div>
+        </div>
+
+        <div className="divider"></div>
+        <div className="text-section-1">
+          <div className="text-section-title">textext</div>
+          <div className="text-section-text">An ancient custom now protected by Norwegian law, alle­mannsretten (Norwegian for the right to roam) ensures one's freedom to move unrestricted throughout the countryside. Applying this idea to the interior in addition to the exterior of a building­ that is, to the landscape and also to the architecture - removes the oppositional nature from these terms. As they become synonymous, interior and exterior spaces become continuous. It was in this spirit that our proposal for the Norwegian National Opera and Ballet was conceived.</div>
+        </div>
 
 
     </div>
+
+
   );
 }
