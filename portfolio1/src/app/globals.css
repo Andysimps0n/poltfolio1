@@ -324,6 +324,44 @@ body::-webkit-scrollbar {
   background-color: rgb(20, 20, 20);
   
 }
+
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20em;
+  background-color: rgb(8, 8, 8);
+}
+
+.footer-wraper {
+  width: fit-content;
+  height: 100%;
+  padding: 3em;
+  padding-top: 6em;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: underline;
+  color: white;
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.footer-title {
+  font-size: 1.5em;
+  font-weight: 200;
+  color: grey;
+  margin-bottom: 0.5em;
+}
+
+
+
+
+
+
 @media (max-width: 768px) {
   html {
     font-size: 10px;
@@ -342,11 +380,6 @@ body::-webkit-scrollbar {
   .text-title {
     font-size: 4rem;
     line-height: 4.2rem;
-    opacity: 0;
-  }
-
-  #title {
-    opacity: 0;
   }
 
   .gallery, .project-explain-wrapper {
@@ -354,11 +387,25 @@ body::-webkit-scrollbar {
   }
 
   .project-explain-wrapper {
-    margin-left: 3em;
+    width: 100%;
   }
 
   .project-explain-container {
-    flex-direction: column;
+    flex-direction: column; 
+    margin: 2em;
+  }
+  .read-more {
+    font-weight: 200;
+    font-size: 1.2em;
+  }
+
+  .text-section-title {
+    width: 10%;
+    padding-left: 1em;
+  }
+
+  .text-section-text {
+    width: 65%;
   }
 }
 
