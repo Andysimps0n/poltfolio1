@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
 }
 
 .border {
-  border: 2px solid red;
+  border: 2px solid rgb(102, 255, 0);
 }
 
 .text-margin {
@@ -69,10 +69,15 @@ body::-webkit-scrollbar {
 .header-element {
   height: fit-content;
   width: fit-content;
-  font-weight: 500;
+  font-weight: 200;
   font-size: 1.5rem;
+  text-decoration: none;
   margin-right: 5em;
   z-index: 2;
+}
+
+.nodeco {
+  text-decoration: none;
 }
 
 .header-element:hover {
@@ -120,10 +125,14 @@ body::-webkit-scrollbar {
 }
 .project-text {
   width: 95%;
+  font-size: 1.5em;
   height: fit-content;
   margin: 1em auto;
-  border-bottom: 1px solid black;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(104, 104, 104);
 }
+
+
 
 .header-wrapper {
   width: 95%;
@@ -410,9 +419,40 @@ a {
 }
 
 
+.home-outer-most-container {
+  width: 95%;
+  height: 60em;
+  margin: 8em auto 0 auto;
+}
 
+.home-title-container {
+  font-size: 2.8em;
+  margin-top: 7em;
+  width: 60%;
+  line-height: 1.3em;
+  height: fit-content;
+  font-weight: 200;
+}
 
+.grey-text {
+  color: rgb(168, 168, 168);
+}
 
+.border2 {
+  border: 4px  solid rgb(0, 17, 255);
+}
+.home-project-grid {
+  width: 100%;
+  height: 60em;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.home-project-grid-container {
+  width: 33%;
+  height: 30em;
+}
 
 @media (max-width: 768px) {
   html {
