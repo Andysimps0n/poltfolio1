@@ -34,10 +34,13 @@ function Header() {
           </div>
         </div>
       </div>
-
       <div className="project-menu">
-        <div className="project-text" onClick={()=>{setIsOnProject(false)}}><Link style={{textDecoration : "none"}} href="/project1">project1</Link></div>
-        <div className="project-text" onClick={()=>{setIsOnProject(false)}}><Link style={{textDecoration : "none"}} href="/project2">project2</Link></div>
+        <Link className="no-underline" href="/project1">
+          <div className="project-text" onClick={()=>{setIsOnProject(false)}}>project 1</div>
+        </Link>
+        <Link className="no-underline" href="/project1">
+          <div className="project-text" onClick={()=>{setIsOnProject(false)}}>project 2</div>
+        </Link>
       </div>
     </div>
     : null}

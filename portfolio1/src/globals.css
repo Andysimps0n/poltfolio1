@@ -267,7 +267,9 @@ body::-webkit-scrollbar {
   font-weight: 400;
 }
 
-
+.no-underline {
+  text-decoration: none;
+}
 
 .FiveEm {
   width: 100%;
@@ -444,6 +446,7 @@ a {
 .home-project-grid {
   width: 100%;
   height: 60em;
+  margin-top: 5em;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -451,7 +454,31 @@ a {
 
 .home-project-grid-container {
   width: 33%;
-  height: 30em;
+  height: 25em;
+  overflow: hidden;
+}
+
+
+.project-grid-picture {
+}
+
+#grid-picture1 {
+  background-image: url('/project2/2.jpg');
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  background-size: cover; 
+  margin: 0;
+  width: 100%;
+  height: 108%;
+}
+#grid-picture2 {
+  background-image: url('/project1/4.jpg');
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  background-size: cover; 
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 768px) {
