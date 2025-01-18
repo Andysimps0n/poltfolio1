@@ -35,12 +35,8 @@ function Header() {
         </div>
       </div>
       <div className="project-menu">
-        <Link className="no-underline" href="/project1">
-          <div className="project-text" onClick={()=>{setIsOnProject(false)}}>project 1</div>
-        </Link>
-        <Link className="no-underline" href="/project1">
-          <div className="project-text" onClick={()=>{setIsOnProject(false)}}>project 2</div>
-        </Link>
+          <div className="project-text" onClick={()=>{setIsOnProject(false); router.push('/project1')}}>project 1</div>
+          <div className="project-text" onClick={()=>{setIsOnProject(false); router.push('/project2')}}>project 2</div>
       </div>
     </div>
     : null}

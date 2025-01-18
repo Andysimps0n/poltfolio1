@@ -41,21 +41,21 @@ export default function Home() {
 
 
       <div className="text1-wrapper ">
-            <div className='text-title' id='title'>Norwegian National</div>
+            <div className='text-title' id='title'>NoNNNrwegian National</div>
             <div className='text-title'>Opera and Ballet</div>
             <div className='text-title color-grey'>Giving waterfront space back to the public</div>
             <div className='text-normal text-margin'>2000–2008</div>
             <div className='text-normal text-margin'>Architecture, Art, Landscape Architecture, Interior Architecture</div>
       </div>
 
-      <div className="first-picture"></div>
+      <div className="first-picture-4"></div>
 
 
         <ProjectExplain ></ProjectExplain>
 
         <div className="second-photo-container ">
-          <div id="photo2"></div>
-          <div id="photo3"></div>
+          <div id="photo7"></div>
+          <div id="photo8"></div>
         </div>
 
 
@@ -65,33 +65,6 @@ export default function Home() {
         </div>
 
 
-        {/* <div className="carousel-container">
-          <div className="carousel-wrapper" style={{left : `${-100 * carouselPage}%`}} >
-            <div id="photo5"></div>
-            <div id="photo4"></div>
-            <div id="photo6"></div>
-
-          </div>
-          <div className="carousel-arrow-container">
-            <div className="arrow-holder" onClick={()=>{carouselPage > 0 ? setCarouselPage(carouselPage-1) : null}}>
-              <SlArrowLeft size={40}></SlArrowLeft>
-            </div>
-            <div className="arrow-holder" onClick={()=>{carouselPage < 2 ? setCarouselPage(carouselPage+1) : null}} >
-              <SlArrowRight size={40}></SlArrowRight>
-            </div>
-          </div>
-          <div className="carousel-nth-wrapper">
-            <div className="carousel-nth">
-              {
-                carouselArr.map((_, i)=>(
-                  i == carouselPage ? <div key={i} className="carousel-nth-element grey"></div> : <div key={i} className="carousel-nth-element"></div>
-                ))
-              }
-            </div>
-          </div>
-        </div> */}
-
-
         <div className="FiveEm"></div>
         <div className="text-section-1">
           <div className="text-section-title">Textext</div>
@@ -99,7 +72,9 @@ export default function Home() {
         </div>
 
 
-        <div className="first-picture"></div>
+        <div className="first-picture-3"></div>
+
+        
         <div className="FiveEm"></div>
         <div className="text-section-1">
           <div className="text-section-title">Textext</div>
@@ -112,8 +87,8 @@ export default function Home() {
 
 
         <div className="second-photo-container ">
-          <div id="photo2"></div>
-          <div id="photo3"></div>
+          <div id="photo9"></div>
+          <div id="photo10"></div>
         </div>
 
 
